@@ -10,17 +10,17 @@
     <packaging>jar</packaging>
 
     <name>Minecraft Core Plugin</name>
-    <description>Plugin Minecraft modulaire complet - Compatible 1.26.2</description>
+    <description>Plugin Minecraft modulaire complet - Compatible 1.26.1.2</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot.version>1.26.2-R0.1-SNAPSHOT</spigot.version>
+        <spigot.version>1.26.1-R0.1-SNAPSHOT</spigot.version>
     </properties>
 
     <dependencies>
-        <!-- Spigot API 1.26.2 -->
+        <!-- Spigot API 1.26.1 -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
@@ -57,6 +57,10 @@
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
     </repositories>
 
