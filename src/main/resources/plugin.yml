@@ -1,0 +1,59 @@
+name: MinecraftCorePlugin
+version: 1.0.0
+main: fr.toxitagyo.plugin.MinecraftCorePlugin
+description: Plugin Minecraft modulaire complet avec économie, social, survie et utilitaires
+authors:
+  - toxitagyo
+
+commands:
+  # Économie
+  money:
+    description: Affiche votre solde
+    usage: /money
+  bank:
+    description: Gère vos comptes bancaires
+    usage: /bank <deposit|withdraw|transfer|balance>
+  shop:
+    description: Ouvre la boutique du marchand
+    usage: /shop
+  
+  # Social
+  team:
+    description: Affiche l'équipe d'un joueur
+    usage: /team <joueur>
+  party:
+    description: Gère votre groupe
+    usage: /party <create|invite|leave|list>
+  quest:
+    description: Gère les quêtes de groupe
+    usage: /quest <accept|list|complete>
+  teambalance:
+    description: Affiche les soldes des équipes
+    usage: /teambalance
+  showranking:
+    description: Affiche le classement des équipes
+    usage: /showranking
+  
+  # Survie
+  thirst:
+    description: Affiche votre niveau de soif
+    usage: /thirst
+  temperature:
+    description: Affiche votre température
+    usage: /temperature
+  
+  # Utilitaires
+  enderstorage:
+    description: Ouvre votre Ender Storage
+    usage: /enderstorage
+  chunkloader:
+    description: Gère les chunk loaders
+    usage: /chunkloader <place|remove|list>
+  revive:
+    description: Réanime un joueur inconscient
+    usage: /revive <joueur>
+  
+  # Affichage
+  updateholograms:
+    description: Met à jour les hologrammes
+    usage: /updateholograms
