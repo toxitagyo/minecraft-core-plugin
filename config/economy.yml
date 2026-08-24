@@ -1,0 +1,38 @@
+# Configuration de l'Économie
+
+# Solde de départ pour les nouveaux joueurs
+starting-balance: 1000.0
+
+# Taux d'intérêt bancaire (en pourcentage)
+interest-rate: 0.5
+
+# Frais de gestion bancaire
+bank-fees: 5.0
+
+# Configuration de la boutique
+shop:
+  enabled: true
+  update-interval: 48  # en heures
+  
+  # Items disponibles
+  items:
+    dirt:
+      buy-price: 1
+      sell-price: 0.5
+      stack-size: 64
+    
+    oak-log:
+      buy-price: 5
+      sell-price: 2.5
+      stack-size: 64
+    
+    stone:
+      buy-price: 2
+      sell-price: 1
+      stack-size: 64
+
+# Transactions
+transactions:
+  min-amount: 1
+  max-amount: 1000000
+  tax-percentage: 0.5

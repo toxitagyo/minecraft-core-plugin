@@ -1,0 +1,52 @@
+# Configuration du Module Affichage
+
+# Hologrammes
+holograms:
+  enabled: true
+  update-interval: 20  # ticks
+  view-distance: 32  # blocks
+  
+  # Types de hologrammes
+  types:
+    ranking:
+      enabled: true
+      update-frequency: 300  # ticks (15 secondes)
+      format: "§6%rank%. §f%team%§f: §a$%balance%"
+    
+    shop-info:
+      enabled: true
+      update-frequency: 600
+      format: "§6Boutique: §a%shop-name%"
+    
+    rules:
+      enabled: true
+      static: true
+      format:
+        - "§6§l=== RÈGLES ==="
+        - "§f1. Respect des joueurs"
+        - "§f2. Pas de griefing"
+        - "§f3. Pas de hack"
+
+# Classements
+rankings:
+  enabled: true
+  update-frequency: 600  # ticks
+  
+  display-modes:
+    top-5: true
+    by-team: true
+    individual: true
+  
+  colors:
+    first: "§6"
+    second: "§7"
+    third: "§d"
+    default: "§f"
+
+# Textes flottants personnalisés
+floating-text:
+  enabled: true
+  persistence: true  # persister après redémarrage
+  line-height: 0.25
+  text-color: "§a"
+  shadow: true

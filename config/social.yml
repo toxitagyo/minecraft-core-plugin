@@ -1,0 +1,31 @@
+# Configuration du Module Social
+
+# Gestion des équipes
+teams:
+  max-members: 10
+  auto-create-on-join: true
+  default-team: "Neutre"
+  colors:
+    Red: "§c"
+    Blue: "§9"
+    Green: "§a"
+    Yellow: "§e"
+
+# Gestion des parties (Party)
+party:
+  enabled: true
+  max-members: 5
+  friendly-fire: false
+  invite-timeout: 60  # en secondes
+
+# Quêtes coopératives
+quests:
+  enabled: true
+  difficulty-scaling: true
+  reward-multiplier: 1.0
+
+# Chat d'équipe
+chat:
+  team-chat-enabled: true
+  team-chat-prefix: "[TEAM]"
+  party-chat-prefix: "[PARTY]"

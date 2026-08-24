@@ -1,0 +1,87 @@
+# Configuration du Module Utilitaires
+
+# Ender Storage (Stockage Ender)
+ender-storage:
+  enabled: true
+  color-coded: true
+  
+  # Configuration des couleurs (3 bandes)
+  colors:
+    - "white"
+    - "orange"
+    - "magenta"
+    - "light-blue"
+    - "yellow"
+    - "lime"
+    - "pink"
+    - "gray"
+    - "light-gray"
+    - "cyan"
+    - "purple"
+    - "blue"
+    - "brown"
+    - "green"
+    - "red"
+    - "black"
+  
+  # Configuration des Ender Pouches
+  pouch:
+    crafting-recipe: true
+    materials:
+      - "leather"
+      - "ender-pearl"
+      - "obsidian"
+  
+  lock-system:
+    enabled: true
+    lock-item: "diamond"
+
+# Chunk Loader
+chunk-loader:
+  enabled: true
+  block: "obsidian"
+  
+  limits:
+    max-per-player: 5
+    max-per-world: 100
+  
+  features:
+    auto-disable-offline: true
+    offline-timeout-hours: 24
+    chunk-loading-radius: 1  # chunks autour du loader
+  
+  forbidden-worlds:
+    - "nether"
+    # - "custom-world"
+
+# Amélioration du Sommeil
+improved-sleeping:
+  enabled: true
+  percentage-required: 30  # % de joueurs pour passer la nuit
+  
+  features:
+    phantom-spawn: true
+    weather-skip: true
+    time-skip: true
+    messages-enabled: true
+
+# Système de Réanimation des Joueurs
+player-revive:
+  enabled: true
+  
+  bleed-out:
+    enabled: true
+    duration-seconds: 30
+    show-bar: true
+  
+  revive:
+    items-required:
+      - "golden_apple"
+      - "red_stained_glass_bottle"
+    revive-time-seconds: 3
+    restore-health: 5  # demi-cœurs
+  
+  penalties:
+    hunger-on-revive: 5
+    slowness-duration: 60  # ticks
+    weakness-duration: 120
