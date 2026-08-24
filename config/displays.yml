@@ -1,4 +1,4 @@
-# Configuration du Module Affichage
+# Configuration du Module Affichage - Minecraft 1.26.2
 
 # Hologrammes
 holograms:
@@ -11,7 +11,8 @@ holograms:
     ranking:
       enabled: true
       update-frequency: 300  # ticks (15 secondes)
-      format: "§6%rank%. §f%team%§f: §a$%balance%"
+      format: "§6%rank%. §f%team§f: §a$%balance%"
+      line-height: 0.3
     
     shop-info:
       enabled: true
@@ -22,10 +23,11 @@ holograms:
       enabled: true
       static: true
       format:
-        - "§6§l=== RÈGLES ==="
+        - "§6§l=== RÈGLES §6§l==="
         - "§f1. Respect des joueurs"
         - "§f2. Pas de griefing"
         - "§f3. Pas de hack"
+        - "§f4. Pas de spam"
 
 # Classements
 rankings:
@@ -50,3 +52,13 @@ floating-text:
   line-height: 0.25
   text-color: "§a"
   shadow: true
+
+# Nouvelles fonctionnalités 1.26.2
+advanced-rendering:
+  enabled: true
+  use-entity-display: true  # Utilise les Display Entities de 1.26.2
+  animation-speed: 1.0
+  particles-enabled: true
+
+# Version Minecraft
+version-support: "1.26.2"

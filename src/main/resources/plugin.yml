@@ -1,9 +1,10 @@
 name: MinecraftCorePlugin
-version: 1.0.0
+version: 1.1.0
 main: fr.toxitagyo.plugin.MinecraftCorePlugin
-description: Plugin Minecraft modulaire complet avec économie, social, survie et utilitaires
+description: Plugin Minecraft modulaire complet avec économie, social, survie et utilitaires - 1.26.2
 authors:
   - toxitagyo
+api-version: "1.21"
 
 commands:
   # Économie
@@ -52,6 +53,9 @@ commands:
   revive:
     description: Réanime un joueur inconscient
     usage: /revive <joueur>
+  enderchest:
+    description: Ouvre votre Ender Chest custom
+    usage: /enderchest
   
   # Affichage
   updateholograms:

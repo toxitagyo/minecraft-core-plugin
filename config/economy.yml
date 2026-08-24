@@ -1,4 +1,4 @@
-# Configuration de l'Économie
+# Configuration de l'Économie - Minecraft 1.26.2
 
 # Solde de départ pour les nouveaux joueurs
 starting-balance: 1000.0
@@ -30,9 +30,27 @@ shop:
       buy-price: 2
       sell-price: 1
       stack-size: 64
+    
+    diamond:
+      buy-price: 500
+      sell-price: 400
+      stack-size: 64
+    
+    iron-ore:
+      buy-price: 15
+      sell-price: 10
+      stack-size: 64
+    
+    copper-ore:
+      buy-price: 8
+      sell-price: 5
+      stack-size: 64
 
 # Transactions
 transactions:
   min-amount: 1
   max-amount: 1000000
   tax-percentage: 0.5
+
+# Version Minecraft
+version-support: "1.26.2"

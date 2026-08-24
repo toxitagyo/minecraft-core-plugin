@@ -1,4 +1,4 @@
-# Configuration du Module Utilitaires
+# Configuration du Module Utilitaires - Minecraft 1.26.2
 
 # Ender Storage (Stockage Ender)
 ender-storage:
@@ -36,10 +36,22 @@ ender-storage:
     enabled: true
     lock-item: "diamond"
 
-# Chunk Loader
+# Chunk Loader - Now as craftable item
 chunk-loader:
   enabled: true
-  block: "obsidian"
+  
+  # Item craftable: Obsidian + Ender Pearl + Diamond
+  crafting:
+    enabled: true
+    material: "obsidian"
+    recipe-shape:
+      - "OEO"
+      - "EDE"
+      - "OEO"
+    ingredients:
+      O: "obsidian"
+      E: "ender_pearl"
+      D: "diamond"
   
   limits:
     max-per-player: 5
@@ -52,7 +64,30 @@ chunk-loader:
   
   forbidden-worlds:
     - "nether"
-    # - "custom-world"
+    - "the_end"
+
+# Ender Chest - Now as craftable item
+ender-chest:
+  enabled: true
+  
+  # Item craftable: Obsidian + Eye of Ender + Ender Pearl
+  crafting:
+    enabled: true
+    material: "ender_chest"
+    recipe-shape:
+      - "OBO"
+      - "BEB"
+      - "OBO"
+    ingredients:
+      O: "obsidian"
+      B: "ender_eye"
+      E: "ender_pearl"
+  
+  features:
+    access-anywhere: true
+    shared-storage: false
+    capacity-slots: 27
+    color-coded: true
 
 # Amélioration du Sommeil
 improved-sleeping:
@@ -85,3 +120,12 @@ player-revive:
     hunger-on-revive: 5
     slowness-duration: 60  # ticks
     weakness-duration: 120
+
+# Configuration de crafting générale
+crafting:
+  ender-chest:
+    enabled: true
+    discover-on-craft: true
+  chunk-loader:
+    enabled: true
+    discover-on-craft: true

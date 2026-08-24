@@ -1,4 +1,4 @@
-# Configuration du Module Social
+# Configuration du Module Social - Minecraft 1.26.2
 
 # Gestion des équipes
 teams:
@@ -10,6 +10,8 @@ teams:
     Blue: "§9"
     Green: "§a"
     Yellow: "§e"
+    Purple: "§d"
+    Cyan: "§b"
 
 # Gestion des parties (Party)
 party:
@@ -17,15 +19,21 @@ party:
   max-members: 5
   friendly-fire: false
   invite-timeout: 60  # en secondes
+  team-bonus-multiplier: 1.2
 
 # Quêtes coopératives
 quests:
   enabled: true
   difficulty-scaling: true
   reward-multiplier: 1.0
+  group-bonus: 1.5
 
 # Chat d'équipe
 chat:
   team-chat-enabled: true
   team-chat-prefix: "[TEAM]"
   party-chat-prefix: "[PARTY]"
+  global-chat-enabled: true
+
+# Version Minecraft
+version-support: "1.26.2"
